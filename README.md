@@ -17,9 +17,7 @@ Your GitHub repo must include a README.md with an outline of the project includi
 
 <img align="right" width="550" height="350" src="https://github.com/molleighH/leaflet-challenge/blob/main/Images/Snapshot%20of%20Active%20Dashboard.png?raw=true">
 
-<code style="color : aqua"> <samp>The United States Geological Survey, or USGS for short, is responsible for providing scientific data about natural hazards, the health of our ecosystems and environment, and the impacts of climate and land-use change. Their scientists develop new methods and tools to supply timely, relevant, and useful information about the Earth and its processes.
-<br>
-The USGS is interested in building a new set of tools that will allow them to visualize their earthquake data. They collect a massive amount of data from all over the world each day, but they lack a meaningful way of displaying it. In this challenge, you have been tasked with developing a way to visualize USGS data that will allow them to better educate the public and other government organizations (and hopefully secure more funding) on issues facing our planet.</samp> </code>
+<code style="color : aqua"> <samp>Our project was inspired by rates of asthma in Detroit, Michigan, whose asthma rates are among the highest in the country. The consensus for the cause of Detroit’s asthma rates are the presence of superfund sites. What is a superfund site? Superfund sites are sites that are located across the country that contain high concentrations of contaminants that pose a health risk to their surrounding communities.</samp> </code>
 
 
  ### Built With 
