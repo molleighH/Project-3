@@ -9,7 +9,7 @@ Your GitHub repo must include a README.md with an outline of the project includi
 
 
 # Danger in Detroit?
-## <ins>Data Visualization </ins>
+## Data Visualization
 ### Overview of Project & Purpose 
 
 [Link to Danger in Detroit? Dashboard](https://molleighH.github.io/leaflet-challenge/)
