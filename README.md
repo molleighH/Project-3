@@ -1,4 +1,4 @@
-<a target="_blank" href="https://icons8.com/icon/MtpOauMbOEhI/dead-man-in-a-coffin">Dead Man In A Coffin</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a target="_blank" href="https://icons8.com/icon/MtpOauMbOEhI/dead-man-in-a-coffin">Cancer Mortality Death Icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 
 # Project-3
 Your GitHub repo must include a README.md with an outline of the project including:
