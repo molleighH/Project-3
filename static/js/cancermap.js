@@ -6,11 +6,11 @@ let url = "https://gispub.epa.gov/arcgis/rest/services/OEI/FRS_INTERESTS/MapServ
 let CancerData = "./county_cancer_data.csv";
 
 //Setting coordinates for counties
-// let counties_coordinates = {
-   // "Oakland": {"latitude": 42.5922, "longitude": 83.3362},
-   // "Wayne": {"latitude": 42.2791, "longitude": 83.3362},
-   // "Washtenaw": {"latitude": 42.3076, "longitude": 83.8473},
-// };
+ let counties_coordinates = {
+    "Oakland": {"latitude": 42.5922, "longitude": 83.3362},
+    "Wayne": {"latitude": 42.2791, "longitude": 83.3362},
+    "Washtenaw": {"latitude": 42.3076, "longitude": 83.8473},
+ };
 
 d3.json(url).then(function (data) {
     // Console log  
@@ -46,50 +46,30 @@ d3.json(url).then(function (data) {
             }).addTo(myMap);
         });
 
-    //Load CSV data and add it to the map Cancer Data
-    d3.csv(CancerData).then(function(csvData) {
-        console.log(csvData);
-        csvData.forEach(function(row) {
-            var marker = L.marker(
-                [row.Latitude, row.Longitude],
-                {
-                    opacity: 1,
-                    // Customize your icon
-                    icon: L.icon(
-                        {
-                            iconUrl: 'https://icons8.com/icon/MtpOauMbOEhI/dead-man-in-a-coffin',
-                            iconSize: [40, 60]
-                        }
-                    )
-                }
-            ).bindPopup(row.Title);
-            marker.addTo(myMap);
-        });
+   // Load CSV data and add it to the map Cancer Data
+   d3.csv(CancerDataData).then(function(csvData) {
+    console.log(csvData);
+    csvData.forEach(function(row) {
+        let county = row.county;
+        let coords = counties_coordinates[county];
 
-   //Load CSV data and add it to the map Asthma Data
-  // d3.csv(asthmaData).then(function(csvData) {
-   // console.log(csvData);
-   // csvData.forEach(function(row) {
-       // let county = row.geographic_area;
-       // let coords = counties_coordinates[county];
-
-        //search data
-       // if(coords)
-       // var marker = L.marker(
-           // [row.Latitude, row.Longitude],
-           // {
-               // opacity: 1,
+        // Search data
+        if(coords)
+        var marker = L.marker(
+            [row.Latitude, row.Longitude],
+            {
+                opacity: 1,
                 // Customize your icon
-               // icon: L.icon(
-                   // {
-                       // iconUrl: './inhaler.png', 
-                       // iconSize: [40, 60]
-                   // }
-               // )
-           // }
-       // ).bindPopup(row.Title);
-       // marker.addTo(myMap);
-   // });
-// }).catch(error => console.error('Error fetching CSV data:', error));
+                icon: L.icon(
+                    {
+                        iconUrl: './DeathIcon.png', 
+                        iconSize: [48, 48]
+                    }
+                )
+            }
+        ).bindPopup(row.Title);
+        marker.addTo(myMap);
+    });
+ }).catch(error => console.error('Error fetching CSV data:', error));
  });
- });
+ 
