@@ -52,3 +52,4 @@ Map is centered at GeoCoordinates [37.09, -95.71] (the United States), with a zo
 * Leaflet
 * d3
 * USGS
+* Referenced a Plotly Library for dropdown code: https://plotly.com/javascript/dropdowns/#:~:text=Use%20Plotly%20to%20create%20custom,source%20graphing%20library%20for%20JavaScript.
