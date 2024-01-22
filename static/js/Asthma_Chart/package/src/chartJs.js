@@ -2,7 +2,7 @@
 import Chart from 'chart.js/auto'
 
 new Chart(
-  document.getElementById('Asthma_chartJs'),
+  document.getElementById('chartJs'),
   {
     type: 'line',
     data: {
@@ -17,7 +17,27 @@ new Chart(
         {
           label: "Wayne Asthma Hospitalization Rates",
           data: [12.8, 13.3, 12.9, 13.1]}
-        ]}});
+        ]},
+    options: {
+      responsive: true,
+      scales: {
+        x: {
+          display: true,
+          title: {
+            display: true,
+            text: "Year"
+          }
+        },
+        y: {
+          display:true,
+          title: {
+            display:true,
+            text: "Age-Adjusted Rate of Hospitalization per 10,000 Population"
+          }
+        }
+      }
+    }
+  });
 
 
 // cd "C:/Users/tasha/OneDrive/Desktop/Asthma/Chart.js/package"

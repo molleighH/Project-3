@@ -18,10 +18,16 @@ let myMap = L.map("map", {
   // Getting Superfund GeoJSON data
   d3.json(superfundSites).then(({features}) => {
 
-    let filter = features.filter(obj => places.map(text => text.toUpperCase()).includes(obj.properties.COUNTY_NAME));
+    console.log(features);
 
+    let filter = features.filter(obj => places.map(text => text.toUpperCase()).includes(obj.properties.COUNTY_NAME));
     
-    L.geoJson(filter).addTo(myMap);
+    L.geoJson(filter, {onEachFeature}).addTo(myMap);
+
+    function onEachFeature(feature, layer) {
+      layer.bindPopup(`<h3>${feature.properties.PRIMARY_NAME}</h3> <hr> <p>${feature.properties.LOCATION_ADDRESS}</p> <p>${feature.properties.CITY_NAME}, MI ${feature.properties.POSTAL_CODE}</p>`)
+    };
+
   });
 
   const counties = "https://gisagocss.state.mi.us/arcgis/rest/services/OpenData/michigan_geographic_framework/MapServer/0/query?outFields=*&where=1%3D1&f=geojson"

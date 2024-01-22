@@ -621,6 +621,25 @@ new (0, _autoDefault.default)(document.getElementById("chartJs"), {
                 ]
             }
         ]
+    },
+    options: {
+        responsive: true,
+        scales: {
+            x: {
+                display: true,
+                title: {
+                    display: true,
+                    text: "Year"
+                }
+            },
+            y: {
+                display: true,
+                title: {
+                    display: true,
+                    text: "Age-Adjusted Rate of Hospitalization per 10,000 Population"
+                }
+            }
+        }
     }
 }); // cd "C:/Users/tasha/OneDrive/Desktop/Asthma/Chart.js/package"
 
