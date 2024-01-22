@@ -1,17 +1,6 @@
 // Superfund locations
 let url = "https://gispub.epa.gov/arcgis/rest/services/OEI/FRS_INTERESTS/MapServer/21/query?outFields=*&where=STATE_CODE%3D%27MI%27&f=geojson";
 
-
-// Cancer Mortality by County Data
-let CancerData = "./county_cancer_data.csv";
-
-//Setting coordinates for counties
- let counties_coordinates = {
-    "Oakland": {"latitude": 42.5922, "longitude": 83.3362},
-    "Wayne": {"latitude": 42.2791, "longitude": 83.3362},
-    "Washtenaw": {"latitude": 42.3076, "longitude": 83.8473},
- };
-
 d3.json(url).then(function (data) {
     // Console log  
     console.log(data);
@@ -46,17 +35,42 @@ d3.json(url).then(function (data) {
             }).addTo(myMap);
         });
 
+// Define layers user can select from 
+let 2015 = L.tileLayer
+let 2016 = L.tileLayer
+let 2017 = L.tileLayer
+let 2018 = L.tileLayer
+let 2019 = L.tileLayer  
+let 2020 = L.tileLayer
+// Cancer Mortality by County Data
+let CancerData = "./county_cancer_data.csv";
+
    // Load CSV data and add it to the map Cancer Data
-   d3.csv(CancerDataData).then(function(csvData) {
-    console.log(csvData);
-    csvData.forEach(function(row) {
+   d3.csv(CancerData).then(function(data) {
+    console.log(data);
+    data.forEach(function(row) {
         let county = row.county;
         let coords = counties_coordinates[county];
+        
+// The function that will determine the color of a color based on the county that it belongs to
+function chooseColor(county) {
+    if (county == "Wayne") return "yellow";
+    else if (county == "Oakland") return "red";
+    else if (county == "Washtenaw") return "orange";
+    else return "black";
+  }
+  //Setting coordinates for counties
+ let counties_coordinates = {
+    "Oakland": {"latitude": 42.5922, "longitude": 83.3362},
+    "Wayne": {"latitude": 42.2791, "longitude": 83.3362},
+    "Washtenaw": {"latitude": 42.3076, "longitude": 83.8473},
+ };
+
+
 
         // Search data
-        if(coords)
-        var marker = L.marker(
-            [row.Latitude, row.Longitude],
+        if(coords){var marker = L.marker(
+            [coords.Latitude, coords.longitude],
             {
                 opacity: 1,
                 // Customize your icon
@@ -69,7 +83,6 @@ d3.json(url).then(function (data) {
             }
         ).bindPopup(row.Title);
         marker.addTo(myMap);
-    });
- }).catch(error => console.error('Error fetching CSV data:', error));
+    };
  });
- 
+ });
