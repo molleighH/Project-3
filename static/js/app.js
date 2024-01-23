@@ -16,4 +16,4 @@ d3.json(url).then(function (data) {
     });
 
 // Call updateMap() once to load the initial dataset
-updateMap(myMap, url);
+//updateMap();

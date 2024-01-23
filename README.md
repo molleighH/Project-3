@@ -4,7 +4,7 @@
 <img align="right" width="650" height="350" src="https://github.com/molleighH/Project-3/blob/main/Resources/Images/DisasterDetroit.png">
 
 
-[Link to Disaster in Detroit? Dashboard](https://molleighH.github.io/leaflet-challenge/)
+[Link to Disaster in Detroit? Dashboard](file:///Users/molleighhughes/Documents/GitHub/Project-3/static/js/appIndex.html)
 
 <code style="color : aqua"> <samp>Our project was inspired by rates of asthma in Detroit, Michigan, whose asthma rates are among the highest in the country. The consensus for the cause of Detroit’s asthma rates are the presence of superfund sites. What is a superfund site? Superfund sites are sites that are located across the country that contain high concentrations of contaminants that pose a health risk to their surrounding communities. Let's examine potential health risks for Metro Detroiters as posed by Superfund Sites</samp> </code>
 
