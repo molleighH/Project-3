@@ -16,9 +16,6 @@
 
     * Through this data visualization project, we aim to contribute valuable insights, in hopes of fostering a data-driven understanding that may inform future actions and policy decisions
 
-**Using the Disaster in Detroit Dashboard, you can use drop down menus, charts, maps, and tables to explore different years, counties, and data interactions to gain a better understanding of the relationship between Superfund sites and the health of surrounding communities.**
-    ** 
-
  ### Built With 
 * PostgreSQL
 * Leaflet
@@ -27,7 +24,7 @@
 * JavaScript
 * Plotly
 * D3
-* Chart.js
+* Chart.js ** (new library)
 * GeoJSON
 * Dropdown boxes
 
@@ -36,9 +33,15 @@
 * To account for the age bias/weight across different counties, asthma hospitalization & cancer death rates were age-adjusted. 
 * All data used was publicly available & permissible to use; therefore, to our knowledge, HIPAA was not violated, nor any of its ethical considerations (such as confidentiality, respect for the individual’s privacy, and responsible handling of sensitive healthcare data.)
 
-
 ### Interactive Map & Visualizations 
-Using the Disaster in Detroit Dashboard, you can use drop down menus, charts, maps, and tables to explore different years, counties, and data interactions to gain a better understanding of the relationship between Superfund sites and the health of surrounding communities.
-Map is centered at GeoCoordinates [37.09, -95.71] (the United States), with a zoom level of 2.5. The size of each marker on the map is proportional to the magnitude of the earthquake. Earthquakes with higher magnitudes appear larger and earthquakes with lower magnitudes appear smaller. The legend on the map provides the earthquake's depth in kilometers; red indicates the depth is greater than 90km, yellow indicates the depth is greater than 70km, and green indicates the depth less than 10 km. Clicking on a marker will display the earthquake's location, date, time, depth (km), and magnitude (Richter). The map can be moved to explore different parts of the world by clicking and dragging. Their is a legend showing the depth (km) and the earthquakes corresponding depth color. 
+Using the Disaster in Detroit Dashboard, you can use drop down menus, charts, maps, and tables to explore different years, counties, and datasets, in order to gain a better understanding of the relationship between Superfund sites and the health of surrounding communities.
+* The interactive map is centered at GeoCoordinates [44.3, -85.6] (Center of Michigan), with a zoom level of 7. Each blue icon represents a Superfund Site. Hovering over the icon will display the name of the site, the county in which it is located, the interest types, the location address, and the active status of the Superfund Site. 
+Lung icons represent the air quality data, while asthma icons represent the asthma hospitalization rates.
+* The Grouped Bar chart shows number of days with each category of AQI in Wayne, Oakland and Washtenaw counties. The Grouped Bar chart uses D3, Chart.js, dropdown box, and legends. 
+* The Line Chart depicts Maximum, Median and 90th percentile of AQI from years 2016 to 2023 
+in Wayne, Oakland And Washtenaw counties. The Line Chart uses D3 and Plotly, dropdown box, and legends.
+* The Asmthma chart visualizes the rates of asthma scross 3 counties in Metro Detroit. The Asmthma chart uses D3, Chart.js, legends, and the ability to click on a county that we are NO LONGER interested in viewing.
+* The Asthma Hospitalization map includes the locations of the Superfund Sites represented as blue markers with a white dot in the center. The map also includes the county in which the Superfund Site is located, the counties are shaded to represent how asthmatic the residents in the respective counties are.
+* Cancer Mortality Plotly Chart depicts the number of cancer deaths per 100,000 residents in Wayne, Oakland and Washtenaw, and the specific number for each county appear when you hover over the bars. Using the dropdown menu, you can navigate different years of Cancer data. The dashed line in the chart represents the number of Superfund Sites in each county.The plotly chart uses Plotly, dropdown box, and legends.
 
 <img align="left" width="550" height="350" src="https://github.com/molleighH/Project-3/blob/main/Resources/Images/Citations.png">
