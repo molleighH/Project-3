@@ -44,4 +44,4 @@ in Wayne, Oakland And Washtenaw counties. The Line Chart uses D3 and Plotly, dro
 * The Asthma Hospitalization map includes the locations of the Superfund Sites represented as blue markers with a white dot in the center. The map also includes the county in which the Superfund Site is located, the counties are shaded to represent how asthmatic the residents in the respective counties are.
 * Cancer Mortality Plotly Chart depicts the number of cancer deaths per 100,000 residents in Wayne, Oakland and Washtenaw, and the specific number for each county appear when you hover over the bars. Using the dropdown menu, you can navigate different years of Cancer data. The dashed line in the chart represents the number of Superfund Sites in each county.The plotly chart uses Plotly, dropdown box, and legends.
 
-<img align="center" width="650" height="350" src="https://github.com/molleighH/Project-3/blob/main/Resources/Images/Citations.png">
+<img align="left" width="650" height="350" src="https://github.com/molleighH/Project-3/blob/main/Resources/Images/Citations.png">
