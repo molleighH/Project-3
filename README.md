@@ -29,7 +29,7 @@ Your GitHub repo must include a README.md with an outline of the project includi
 * GeoJSON
 * Dropdown boxes
 
-[Link to Danger in Detroit? Dashboard](https://molleighH.github.io/leaflet-challenge/)
+[Link to Disaster in Detroit? Dashboard](https://molleighH.github.io/leaflet-challenge/)
 
 ### Prerequisites
 #### Make sure the following prerequisites are installed
