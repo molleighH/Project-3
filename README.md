@@ -14,9 +14,13 @@
 
 <code style="color : aqua"> <samp>Our project was inspired by rates of asthma in Detroit, Michigan, whose asthma rates are among the highest in the country. The consensus for the cause of Detroit’s asthma rates are the presence of superfund sites. What is a superfund site? Superfund sites are sites that are located across the country that contain high concentrations of contaminants that pose a health risk to their surrounding communities. Let's examine potential health risks for Metro Detroiters as posed by Superfund Sites</samp> </code>
 
-### Project Purpose: Investigate whether the presence of an above-average number of Superfund sites in the Metro Detroit area has a discernible impact on the health of the surrounding communities. 
-#### To explore this relationship comprehensively, we analyze and visualize key health indicators, including Asthma Hospitalization rates, Cancer Mortality data, and Air Quality Index measurements.
-##### Through this data visualization project, we aim to contribute valuable insights, in hopes of fostering a data-driven understanding that may inform future actions and policy decisions.
+### <u>Project Purpose:</u> Investigate whether the presence of an above-average number of Superfund sites in the Metro Detroit area has a discernible impact on the health of the surrounding communities. 
+    * To explore this relationship comprehensively, we analyze and visualize key health indicators:
+        * Asthma Hospitalization Rates 
+        * Cancer Mortality Data 
+        * Air Quality Index Measurements.
+        
+    * Through this data visualization project, we aim to contribute valuable insights, in hopes of fostering a data-driven understanding that may inform future actions and policy decisions.
 
 
 
