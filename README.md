@@ -1,11 +1,8 @@
-# Project-3
-* An overview of the project and its purpose
-* Instructions on how to use and interact with the project
-* At least one paragraph summarizing efforts for ethical considerations made in the project
+
 * References for the data source(s)
 * References for any code used that is not your own
 
-
+[Link to Disaster in Detroit? Dashboard](https://molleighH.github.io/leaflet-challenge/)
 
 # Disaster in Detroit?
 ### Overview of Project & Purpose 
@@ -20,13 +17,10 @@
         * Cancer Mortality Data 
         * Air Quality Index Measurements.
 
-    * Through this data visualization project, we aim to contribute valuable insights, in hopes of fostering a data-driven understanding that may inform future actions and policy decisions.
+    * Through this data visualization project, we aim to contribute valuable insights, in hopes of fostering a data-driven understanding that may inform future actions and policy decisions
 
-
-
-
-[Link to Disaster in Detroit? Dashboard](https://molleighH.github.io/leaflet-challenge/)
-
+**Using the Disaster in Detroit Dashboard, you can use drop down menus, charts, maps, and tables to explore different years, counties, and data interactions to gain a better understanding of the relationship between Superfund sites and the health of surrounding communities.**
+    ** 
 
  ### Built With 
 * PostgreSQL
@@ -40,12 +34,13 @@
 * GeoJSON
 * Dropdown boxes
 
+### Ethical Considerations
+* All health data was already stripped of all individual identifiers (PHI) & aggregated. 
+* To account for the age bias/weight across different counties, asthma hospitalization & cancer death rates were age-adjusted. 
+* All data used was publicly available & permissible to use; therefore, to our knowledge, HIPAA was not violated, nor any of its ethical considerations (such as confidentiality, respect for the individual’s privacy, and responsible handling of sensitive healthcare data.)
+
 
 ### Interactive Map
 Map is centered at GeoCoordinates [37.09, -95.71] (the United States), with a zoom level of 2.5. The size of each marker on the map is proportional to the magnitude of the earthquake. Earthquakes with higher magnitudes appear larger and earthquakes with lower magnitudes appear smaller. The legend on the map provides the earthquake's depth in kilometers; red indicates the depth is greater than 90km, yellow indicates the depth is greater than 70km, and green indicates the depth less than 10 km. Clicking on a marker will display the earthquake's location, date, time, depth (km), and magnitude (Richter). The map can be moved to explore different parts of the world by clicking and dragging. Their is a legend showing the depth (km) and the earthquakes corresponding depth color. 
 
-## Credits
-* Leaflet
-* d3
-* USGS
-* Referenced a Plotly Library for dropdown code: https://plotly.com/javascript/dropdowns/#:~:text=Use%20Plotly%20to%20create%20custom,source%20graphing%20library%20for%20JavaScript.
+<img align="right" width="450" height="350" src="https://github.com/molleighH/Project-3/blob/main/Resources/Images/Citations.png">
