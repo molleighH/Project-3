@@ -63,7 +63,7 @@ d3.csv(aqiData).then(function(airData){
             title: "Air Quality Index"
         };       
     
-        Plotly.newPlot("plot", data, layout); 
+        Plotly.newPlot("chart1", data, layout); 
 
    
     d3.selectAll("#selDataset").on("change", updateData)
@@ -135,7 +135,7 @@ d3.csv(aqiData).then(function(airData){
             title: "Air Quality Index"
         };       
     
-        Plotly.newPlot("plot", data, layout); 
+        Plotly.newPlot("chart1", data, layout); 
 
         }; 
         

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Leaflet Step-1</title>
+  <title>Project 3 Dashboard</title>
 
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
@@ -18,6 +18,12 @@
 
   <!--The div that holds our map -->
   <div id="map" style="width: 100%; height: 600px;"></div>
+  <!-- the dropdownbox to select counties -->
+  <select id="selDataset">
+    <option value="oakland">Oakland</option>
+    <option value="washtenaw">Washtenaw</option>
+    <option value="wayne">Wayne</option>
+</select>
 
   <div id="chart1"></div>
   <div id="chart2"></div>
@@ -32,11 +38,13 @@
 
   <!-- Our JavaScript -->
   <script type="text/javascript" src="./js_logic.js"></script>
+  <!-- plotly -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
   <!--AirData JS-->
   <script type="text/javascript" src="./airData.js"></script>
-  <!-- type="text/javascript" src="./chart1.js"></script>
-  <!-- plotly.newPlot('chart1', [traces1])-->
+  <!-- aqiData js  -->
+  <script src="aqi_logic.js"></script>
   <!--script type="text/javascript" src="./chart2.js"></script-->
   <!-- plotly.newPlot('chart2', [traces1])-->
 </body>
