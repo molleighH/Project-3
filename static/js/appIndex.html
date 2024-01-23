@@ -27,6 +27,12 @@
       #map {
         height: 500px;
       }
+      
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+<!-- Our CSS -->
+<link rel="stylesheet" type="text/css" href="static/css/style.css">
 
     </style>
 </head>
@@ -47,6 +53,39 @@
   <script src="./app.js"></script>
   <script>
   </script>
+  <!--The div that holds our map -->
+  <div id="map" style="width: 100%; height: 600px;"></div>
+  <!-- the dropdownbox to select counties -->
+  <select id="selDataset">
+    <option value="oakland">Oakland</option>
+    <option value="washtenaw">Washtenaw</option>
+    <option value="wayne">Wayne</option>
+</select>
+
+  <div id="chart1"></div>
+  <div id="chart2"></div>
+
+
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+  <!-- D3 JavaScript -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <!-- Our JavaScript -->
+  <script type="text/javascript" src="./js_logic.js"></script>
+  <!-- plotly -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+  <!--AirData JS-->
+  <script type="text/javascript" src="./airData.js"></script>
+  <!-- aqiData js  -->
+  <script src="aqi_logic.js"></script>
+  <!--script type="text/javascript" src="./chart2.js"></script-->
+  <!-- plotly.newPlot('chart2', [traces1])-->
 
 </body>
 
