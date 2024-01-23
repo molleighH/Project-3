@@ -37,7 +37,8 @@
 * All data used was publicly available & permissible to use; therefore, to our knowledge, HIPAA was not violated, nor any of its ethical considerations (such as confidentiality, respect for the individual’s privacy, and responsible handling of sensitive healthcare data.)
 
 
-### Interactive Map
+### Interactive Map & Visualizations 
+Using the Disaster in Detroit Dashboard, you can use drop down menus, charts, maps, and tables to explore different years, counties, and data interactions to gain a better understanding of the relationship between Superfund sites and the health of surrounding communities.
 Map is centered at GeoCoordinates [37.09, -95.71] (the United States), with a zoom level of 2.5. The size of each marker on the map is proportional to the magnitude of the earthquake. Earthquakes with higher magnitudes appear larger and earthquakes with lower magnitudes appear smaller. The legend on the map provides the earthquake's depth in kilometers; red indicates the depth is greater than 90km, yellow indicates the depth is greater than 70km, and green indicates the depth less than 10 km. Clicking on a marker will display the earthquake's location, date, time, depth (km), and magnitude (Richter). The map can be moved to explore different parts of the world by clicking and dragging. Their is a legend showing the depth (km) and the earthquakes corresponding depth color. 
 
-<img align="right" width="450" height="350" src="https://github.com/molleighH/Project-3/blob/main/Resources/Images/Citations.png">
+<img align="left" width="550" height="350" src="https://github.com/molleighH/Project-3/blob/main/Resources/Images/Citations.png">
