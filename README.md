@@ -1,5 +1,4 @@
 # Project-3
-Your GitHub repo must include a README.md with an outline of the project including:
 * An overview of the project and its purpose
 * Instructions on how to use and interact with the project
 * At least one paragraph summarizing efforts for ethical considerations made in the project
@@ -9,12 +8,20 @@ Your GitHub repo must include a README.md with an outline of the project includi
 
 
 # Disaster in Detroit?
-## Data Visualization
 ### Overview of Project & Purpose 
 
 <img align="right" width="650" height="350" src="https://github.com/molleighH/Project-3/blob/main/Resources/Images/DisasterDetroit.png">
 
 <code style="color : aqua"> <samp>Our project was inspired by rates of asthma in Detroit, Michigan, whose asthma rates are among the highest in the country. The consensus for the cause of Detroit’s asthma rates are the presence of superfund sites. What is a superfund site? Superfund sites are sites that are located across the country that contain high concentrations of contaminants that pose a health risk to their surrounding communities. Let's examine potential health risks for Metro Detroiters as posed by Superfund Sites</samp> </code>
+
+### Project Purpose: Investigate whether the presence of an above-average number of Superfund sites in the Metro Detroit area has a discernible impact on the health of the surrounding communities. 
+#### To explore this relationship comprehensively, we analyze and visualize key health indicators, including Asthma Hospitalization rates, Cancer Mortality data, and Air Quality Index measurements.
+##### Through this data visualization project, we aim to contribute valuable insights, in hopes of fostering a data-driven understanding that may inform future actions and policy decisions.
+
+
+
+
+[Link to Disaster in Detroit? Dashboard](https://molleighH.github.io/leaflet-challenge/)
 
 
  ### Built With 
@@ -28,8 +35,6 @@ Your GitHub repo must include a README.md with an outline of the project includi
 * Chart.js
 * GeoJSON
 * Dropdown boxes
-
-[Link to Disaster in Detroit? Dashboard](https://molleighH.github.io/leaflet-challenge/)
 
 ### Prerequisites
 #### Make sure the following prerequisites are installed
