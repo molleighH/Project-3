@@ -43,7 +43,8 @@ let counties_coordinates = {
 
 
 // Cancer Mortality by County Data
-let CancerData = "./county_cancer_data.csv";
+  };
+  let CancerData = "https://raw.githubusercontent.com/molleighH/Project-3/main/Resources/county_cancer_data.csv";
 
 // Initialize all  LayerGroups that we'll use.
 let layers = {
