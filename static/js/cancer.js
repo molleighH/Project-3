@@ -1,33 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+Plotly.d3.csv('https://raw.githubusercontent.com/molleighH/Project-3/main/Resources/county_cancer_data.csv', function (err, rows) {
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <title>Cancer Deaths and Superfund Abundance</title>
-</head>
+function unpack(rows, key) {
+  return rows.map(function (row) {
+    return row[key];
+  });
+}
 
-<body>
-
-  <div>
-    <label for="yearSelector">Select Year:</label>
-    <select id="yearSelector"></select>
-  </div>
-
-  <div id="plot"></div>
-
-  <script>
-    Plotly.d3.csv('https://raw.githubusercontent.com/molleighH/Project-3/main/Resources/county_cancer_data.csv', function (err, rows) {
-
-      function unpack(rows, key) {
-        return rows.map(function (row) {
-          return row[key];
-        });
-      }
-
-      var allCountyNames = Array.from(new Set(unpack(rows, 'county'))),
+var allCountyNames = Array.from(new Set(unpack(rows, 'county'))),
         allYears = Array.from(new Set(unpack(rows, 'year'))),
         superfundSites = {
           'Wayne': 205,
