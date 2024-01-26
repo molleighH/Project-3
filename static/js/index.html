@@ -47,57 +47,43 @@
     </div>
     <div id="map"></div>
 
+  <!-- Libraries -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
 
-    <div>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <canvas id="aqiChart"></canvas>
+
+  <div>
     <label for="yearSelector">Select Year:</label>
     <select id="yearSelector"></select>
   </div>
 
   <div id="plot"></div>
-    
-
-  <script src="https://d3js.org/d3.v7.min.js"></script>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="app.js"></script>
-  <script>
-  </script>
-
-<!--The div that holds our map -->
-  <div id="map" style="width: 100%; height: 600px;"></div>
 
   <!-- the dropdownbox to select counties -->
   <select id="selDataset">
     <option value="oakland">Oakland</option>
     <option value="washtenaw">Washtenaw</option>
     <option value="wayne">Wayne</option>
-</select>
+  </select>
+
+  
 
   <div id="chart1"></div>
-  <div id="chart2"></div>
-
-
-
-
-  <!-- Leaflet JS -->
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""></script>
-
-  <!-- D3 JavaScript -->
-  <script src="https://d3js.org/d3.v7.min.js"></script>
-
+  
+   
+  
   <!-- Our JavaScript -->
   <script type="text/javascript" src="logic.js"></script>
-
-  <!-- Plotly -->
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-
   <script src="cancer.js"></script>
-
-  <!-- aqiData js  -->
   <script src="aqi_logic.js"></script>
-  <!--script type="text/javascript" src=".chart2.js"></script-->
-  <!-- plotly.newPlot('chart2', [traces1])-->
+  <script s src="wayne_aqi.js"></script>
+  
 
 </body>
 

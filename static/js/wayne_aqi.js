@@ -107,8 +107,8 @@ d3.csv(aqiData).then(function(airData){
       }
     }
         
-      
-    const ctx = document.getElementById("aqiChart").getContext('2d');          
+    let aqiChart = null;  
+    const ctx = document.getElementById("aqiChart");          
   
     chart = new Chart(ctx, {
         type: 'bar',

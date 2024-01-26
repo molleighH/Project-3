@@ -50,7 +50,7 @@ let myMap = L.map("map", {
   });
 
 // Filtered AQI data
-let airData = "./data.csv";
+let airData = "https://raw.githubusercontent.com/molleighH/Project-3/main/static/js/data.csv";
 
 d3.csv(airData).then(function(data) {
 
@@ -66,7 +66,7 @@ d3.csv(airData).then(function(data) {
 }});
 
 // Filtered asthma data
-let asthmaData = "./asthma_data.csv"
+let asthmaData = "https://raw.githubusercontent.com/molleighH/Project-3/main/static/js/asthma_data.csv"
 
 d3.csv(asthmaData).then(({data}) => {
 
