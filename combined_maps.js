@@ -207,11 +207,7 @@ document.getElementById('yearSelector').addEventListener('change', function () {
 // Set up the default plot for the initial year
 setBubblePlot(allYears[0]);
 });
-</script>
 
-</body>
-
-</html>
 
 
 
