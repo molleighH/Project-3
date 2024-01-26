@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Disaster in Detroit</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+
+    <style>
+      body{
+        background-image: url('https://as2.ftcdn.net/v2/jpg/02/77/18/05/1000_F_277180532_fSWtw8srvIEL7zew9qzQrNxNM00DH9Mn.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      text {
+        font-weight: bold;
+         font-size: large;
+           }
+      #map {
+        height: 500px;
+      }
+
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+<!-- Our CSS -->
+<link rel="stylesheet" type="text/css" href="static/css/style.css">
+</style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Disaster in Detroit Dashboard</h1>
+      </div>
+    </div>
+    <div id="map"></div>
+
+
+    <div>
+    <label for="yearSelector">Select Year:</label>
+    <select id="yearSelector"></select>
+  </div>
+
+  <div id="plot"></div>
+    
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="app.js"></script>
+  <script>
+  </script>
+
+<!--The div that holds our map -->
+  <div id="map" style="width: 100%; height: 600px;"></div>
+
+  <!-- the dropdownbox to select counties -->
+  <select id="selDataset">
+    <option value="oakland">Oakland</option>
+    <option value="washtenaw">Washtenaw</option>
+    <option value="wayne">Wayne</option>
+</select>
+
+  <div id="chart1"></div>
+  <div id="chart2"></div>
+
+
+
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+  <!-- D3 JavaScript -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <!-- Our JavaScript -->
+  <script type="text/javascript" src="logic.js"></script>
+
+  <!-- Plotly -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+  <script src="cancer.js"></script>
+
+  <!-- aqiData js  -->
+  <script src="aqi_logic.js"></script>
+  <!--script type="text/javascript" src=".chart2.js"></script-->
+  <!-- plotly.newPlot('chart2', [traces1])-->
+
+</body>
+
+</html>
